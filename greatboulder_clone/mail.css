@@ -1,0 +1,531 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+body{
+    height:100%;
+    
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #73757c;
+    line-height: 22px;
+    
+    
+}
+
+/*header*/
+header{
+position: fixed;
+top:0;
+height:50px;
+background-color:rgba(0,49,60,0.9);
+width:100%;
+z-index: 11;
+
+
+}
+.menu{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    
+
+}
+.menu .logo{
+    margin:10px 10px 10px 65px;
+    display: inline-flex;
+
+}
+header .menu img{
+    width:170px;
+    height:33px;
+
+}
+.menu ul{
+    display: inline-flex;
+    margin:8 60 0 35;
+    float:right;
+}
+.menu ul li{
+    display: inline-flex;
+    margin: 0 0 0 2;
+    padding:5;
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 	20px;
+    color:white;
+
+}
+.menu ul li:hover{
+    color:goldenrod;
+
+}
+/* header end */
+/*phone-menu*/
+.toggle-button{
+    position:absolute;
+    top:.75rem;
+    right:.1rem;
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+    width:30px;
+    height:20px;
+    margin-right: 20px;
+}
+.toggle-button .bar{
+    height:3px;
+    width:100%;
+    background-color: white;
+    border-radius: 10px;
+    
+
+}
+
+/* slider */
+.slider{
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+
+}
+.slider .slides{
+    width:500%;
+    display: flex;
+    
+
+}
+.slide {
+    width: 100%;
+}
+
+.slider .slides .slide img{
+    object-fit: cover;
+    width: 100%;
+}
+
+/*buttons3*/
+#prevbtn{
+    background-color:rgba(0,49,60,0); /* Green */
+    border: none;
+    color: white;
+    position: absolute;
+    margin-top:-19%;
+    z-index: 10;
+    left: 5%;
+    font-size:50px;
+    cursor:pointer;
+
+}
+
+#nextbtn{
+    background-color:rgba(0,49,60,0); 
+    border: none;
+    color: white;
+    position: absolute;
+    margin-top:-19%;
+    z-index: 10;
+    right:5%;
+    font-size:50px;
+    cursor:pointer;
+
+}
+.slide-text {
+    z-index: 20;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width:100vw;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 2vw;
+
+}
+.slide-text .content-btn a{
+    
+    text-align: center;
+    font-family: "Industry-Bold",sans-serif;
+    color:white;
+    text-transform: uppercase;
+    min-width: 181px;
+    padding: 13px;
+    display: inline-block;
+    border: 1px solid #d29f13;
+    transition: all 0.3s;
+    margin-top: 0px;
+       
+        
+
+  
+}
+.slide-text .content-btn a:hover{
+    background-color:#d29f13;
+    
+}
+.slide-text h1{
+    
+    color: #fff;
+    margin-bottom:15px;
+    font-size:3vw;
+}
+.slide-text h2{
+    
+    color: #d29f13;
+    margin-bottom:25px;
+    text-transform: uppercase;
+    line-height: 35px;
+    font-size:2vw;
+}
+.container {
+    margin-bottom: 45px;
+    padding: 0 15px;
+   /* display: block;*/
+    width: 95%;
+    margin: 5 15 45 15;
+    
+    padding-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    color: #00313c;
+    font-family: "Industry-Bold",sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    line-height: 22px;
+}
+.content {
+    display: inline-grid;
+    padding: 0 20px;
+    margin-bottom: 25px;
+    
+    
+}
+.content .company{
+    display: inline-flex;
+    padding: 30px 0px 30px 30px;
+    margin-bottom: 30px;
+    background: #00313c;
+
+}
+.content .company .info{
+    padding-left:25px;
+}
+.content .company .info h2{
+    font-size:18px;
+    color:#d29f13;
+    margin-bottom:10px;
+}
+.content .company .info #company-price{
+    color:white;
+    font-size:35px
+}
+.products{
+    display: inline-flex;
+    margin-bottom:25px;
+
+}
+.product{
+    width: 82px;
+    height: 163px;
+}
+.products .product .element{
+    border: 1px solid #00313c;
+    padding: 12px 10px 8px;
+    font-size: 16px;
+    font-weight:bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #00313c;
+    font-family: 'Bebas Neue', cursive;
+}
+.products .product .element p{
+margin-bottom: 2px;
+}
+.element-s{
+    font-size: 36px;
+}
+
+.price{
+    font-size: 12px;
+    line-height: 13px;
+    padding-left:5px;
+   
+}
+.price a{
+    font-size:10px;
+}
+.element-price{
+    font-weight: bold;
+}
+.currency{
+    font-weight: bold;
+    color:#d29f13;
+}
+.news-box{
+    margin-top:25px;
+   
+}
+.news-box .date{
+    font-size: 12px;
+    color: #d29f13;
+    margin: 0;
+}
+.news-box a{
+    text-decoration: none;
+    color:#73757c;
+    
+}
+.news-box a:hover{
+    text-decoration: underline;
+    
+}
+.content-btn{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vw;
+
+
+}
+.content .content-btn a ,.article .content-btn a{
+    text-align: center;
+    font-family: "Industry-Bold",sans-serif;
+    color: #00313c;
+    text-transform: uppercase;
+    min-width: 181px;
+    padding: 13px;
+    display: inline-block;
+    border: 1px solid #00313c;
+    transition: all 0.3s;
+   
+    
+}
+.content .content-btn a:hover ,.article .content-btn a:hover{
+    background-color:00313c;
+    color:white;
+}
+.article-wrap{
+    background-color:#f1f1f1;
+}
+.article-wrap .image{
+    width: 50%;
+    float: left;
+}
+
+.article-wrap .image img{
+    width: 100%;
+}
+.article {
+    padding: 40px 30px 40px 30px;
+    width: 50%;
+    margin-left: auto;
+    
+
+}
+.article p{
+    margin-bottom: 35px;
+}
+.footer {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    justify-content: center;
+    padding: 60px 0px 30px 0px;
+    margin: 0;
+    color: #22242c;
+    
+}
+.footer h3 {
+    color: #00313c;
+    text-transform: uppercase;
+    font-family: "Industry-Bold",sans-serif;
+    font-size: 16px;
+    margin: 0 0 30px;
+}
+.footer ul, li ,a {
+    margin-top: 0;
+    margin-bottom: 10px;
+    list-style-type:none;
+    color:#73757c;
+}
+.contacts , .links , .login{
+    margin-bottom: 50px;
+    position: relative;
+    min-height: 1px;
+    margin: 0 auto;
+      
+}
+.contacts ul li{
+    margin-bottom: 20px;
+}
+.footer .login .input{
+    display: inline-flex;
+}
+
+.footer .login input {
+    color: #22242c;
+    width: 100%;
+    border:0;
+    font-size: 16px;
+    height: auto;
+    background: #f1f1f1;
+    margin-bottom: 30px;
+    padding:14px 45px 14px 18px;
+    
+}
+#fieldName{
+    margin-right: 15px;
+}
+#fieldEmail{
+    margin-left: 15px;
+}
+
+.footer .login button{
+    float:right;
+    width:46%;
+    background: #00313c;
+    height: 50px;
+    color: #fff;
+    border: 0;
+    font-family: "Industry-Bold",sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+    
+}
+@media (min-width: 1200px){
+
+.content {
+    width: 21%;
+    
+}}
+@media (max-width:990px){
+.slide-text {
+    line-height: 1vw;    
+}
+.slide-text h1 {    
+    font-size:4vw;
+}
+.slide-text h2 {
+        
+    font-size:3vw;
+    margin-bottom: 2vw;
+    line-height: 2vw;
+ }
+.content{
+    width:100%;
+    padding-left: 10%;
+    padding-right: 10%;
+ }
+.article-wrap .image {
+    width: 100%;
+    float: none;
+    
+}
+.article-wrap .article {
+    margin: 0px;
+    width:100%;   
+}
+.product{
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer .login input {
+    font-size: 1.7vw;
+}
+.toggle-button{
+    display:flex;
+
+}
+
+.menu{
+    position:sticky;
+    background-color: rgba(0,49,60,0.9);
+    flex-direction:column;
+}
+.navbar-links{
+    width:100%;
+    padding-bottom: 30px;
+    display:none;
+}
+.menu ul{
+    flex-direction:column;
+    width:100%;
+    margin: 0;
+    
+
+}
+.menu ul li {
+width:100%;
+border-bottom:1px solid white;
+text-align: center;
+display: list-item;
+
+}
+.menu ul li:hover{
+    background-color: rgba(0,49,60);
+    }
+.menu .logo {
+    margin: 10px 10px 10px 10px;
+   
+}
+.navbar-links.active{
+    display:flex;
+}
+
+}
+
+@media (max-width:760px){
+.slide-text {
+    line-height: 2vw;
+    top:40%;    
+}
+.slide-text h1 {    
+    font-size:4vw;
+}
+.slide-text h2 {
+            
+    font-size:3vw;
+    margin-bottom: 2vw;
+    line-height: 3vw;
+}
+
+.footer{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1.5fr;
+    text-align: center;
+    
+}
+.footer .login button{
+   float: none;
+    
+}
+.footer .login .input{
+    display: block;
+    width:100%;
+
+}
+#fieldName{
+    margin:0 0 30 0;
+}
+#fieldEmail{
+    margin:0 0 30 0;
+}
+
+.footer .login input {
+    font-size: 3vw;
+}
+
+
+}
+
+
